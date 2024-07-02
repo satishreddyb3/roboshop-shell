@@ -24,7 +24,7 @@ then
     echo -e "$R ERROR:: Please run this script with root access $N"
     exit 1 # you can give other than 0
 else
-    echo "$G You are root user $N"
+    echo "You are root user"
 fi 
 cp mongo.repo /etc/yum.repos.d/mongo.repo &>> $LOGFILE
 VALIDATE $? "copied mongodb"
